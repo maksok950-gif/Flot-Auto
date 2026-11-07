@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLOT AUTO — премиальный автосалон в Москве</title>
+  <meta name="description" content="FLOT AUTO — частный автосалон премиальных автомобилей в Москве. Подбор, трейд-ин, финансирование и доставка под ключ с 2012 года.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FLOT AUTO — автомобили с характером">
+  <meta property="og:description" content="Премиальный автосалон в Москве. Подбор, проверка и доставка под ключ.">
+  <meta property="og:image" content="assets/hero-poster.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='32' y='46' font-family='Arial' font-size='40' font-weight='800' fill='%23f4f4f1' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/SFProText-Heavy.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/SFProText-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/hero-poster.jpg" as="image">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/sections2.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <noscript><style>.preloader{display:none!important}.hero__word{transform:none!important}.reveal,.reveal-lines .line>span{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__top container">
+      <div class="preloader__brand"><span class="logo__mark">F</span><span>FLOT AUTO</span></div>
+      <span class="preloader__label">PREMIUM CARS / MOSCOW</span>
+    </div>
+    <div class="preloader__center">
+      <div class="preloader__word"><span>FLOT</span><span class="outline">AUTO</span></div>
+      <p>Автомобили с характером</p>
+    </div>
+    <div class="preloader__bottom container">
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+      <div class="preloader__count"><span id="preloaderCount">00</span><span>%</span></div>
+    </div>
+  </div>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a class="logo" href="#home" aria-label="FLOT AUTO — на главную">
+        <span class="logo__mark">F</span>
+        <span class="logo__text"><span class="logo__name">FLOT <em>AUTO</em></span><span class="logo__sub">PREMIUM CARS</span></span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#collection">Коллекция</a>
+        <a href="#about">О салоне</a>
+        <a href="#services">Услуги</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+74951204040">+7 (495) 120-40-40</a>
+        <a class="btn btn--primary btn--sm magnetic" href="#contacts"><span>Тест-драйв</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner container">
+      <div class="menu__top">
+        <span class="menu__label">НАВИГАЦИЯ / FLOT AUTO</span>
+        <button class="menu__close" id="menuClose" type="button" aria-label="Закрыть меню"><span></span><span></span></button>
+      </div>
+      <nav class="menu__nav" aria-label="Мобильная навигация">
+        <a href="#collection" style="--i:0"><span>01</span>Коллекция</a>
+        <a href="#about" style="--i:1"><span>02</span>О салоне</a>
+        <a href="#services" style="--i:2"><span>03</span>Услуги</a>
+        <a href="#reviews" style="--i:3"><span>04</span>Отзывы</a>
+        <a href="#contacts" style="--i:4"><span>05</span>Контакты</a>
+      </nav>
+      <div class="menu__bottom">
+        <div class="menu__contacts">
+          <a href="tel:+74951204040">+7 (495) 120-40-40</a>
+          <a href="mailto:hello@flotauto.ru">hello@flotauto.ru</a>
+        </div>
+        <div class="menu__socials">
+          <a href="https://t.me/flotauto" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://vk.com/flotauto" target="_blank" rel="noopener">VK</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+        </div>
+        <p>Москва, Пресненская наб., 12<br>Ежедневно 10:00—21:00</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="hero" id="home">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" id="heroVideo" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="assets/hero-poster.jpg">
+          <source src="assets/714330d96ac242f9a63c418ad78fbbd5_720w.mp4" type="video/mp4">
+        </video>
+        <div class="hero__shade"></div>
+      </div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__meta">
+          <div class="hero__meta-item"><span class="dot"></span>МОСКВА · ПРЕСНЕНСКАЯ НАБ., 12</div>
+          <div class="hero__meta-item">ЕЖЕДНЕВНО 10:00—21:00</div>
+          <div class="hero__meta-item hero__meta-item--right">EST. 2012 <span class="hero__meta-sep">/</span> 55.7558° N</div>
+        </div>
+
+        <div class="hero__center">
+          <div class="hero__kicker"><span class="hero__kicker-line"></span>АВТОСАЛОН НОВОГО ПОКОЛЕНИЯ</div>
+          <h1 class="hero__title" aria-label="FLOT AUTO">
+            <span class="hero__line"><span class="hero__word">FLOT</span><span class="hero__reg">®</span></span>
+            <span class="hero__line hero__line--outline"><span class="hero__word hero__word--outline">AUTO</span></span>
+          </h1>
+        </div>
+
+        <div class="hero__bottom">
+          <div class="hero__intro">
+            <p>Премиальные автомобили с характером. Находим, проверяем и передаём ключи — от первого тест-драйва до постановки на учёт.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary magnetic" href="#collection"><span>Смотреть коллекцию</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+              <a class="btn btn--ghost magnetic" href="#contacts"><span>Подобрать авто</span></a>
+            </div>
+          </div>
+          <ul class="hero__stats">
+            <li><span class="hero__stat-num">120+</span><span class="hero__stat-label">автомобилей<br>в наличии</span></li>
+            <li><span class="hero__stat-num">14</span><span class="hero__stat-label">лет<br>на рынке</span></li>
+            <li><span class="hero__stat-num">98%</span><span class="hero__stat-label">клиентов<br>рекомендуют нас</span></li>
+          </ul>
+          <a class="hero__scroll" href="#collection" aria-label="Листайте к коллекции">
+            <span class="hero__scroll-text">SCROLL</span>
+            <span class="hero__scroll-icon"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v9M4.5 8.5 8 12l3.5-3.5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Mercedes-Benz</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">BMW</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Audi</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Porsche</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Bentley</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Lamborghini</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Rolls-Royce</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Tesla</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Aston Martin</span><span class="marquee__sep">✦</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Mercedes-Benz</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">BMW</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Audi</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Porsche</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Bentley</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Lamborghini</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Rolls-Royce</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Tesla</span><span class="marquee__sep">✦</span>
+          <span class="marquee__item">Aston Martin</span><span class="marquee__sep">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section--light showroom" id="collection">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="section-head__label"><span class="section-head__index">01</span><span class="section-head__line"></span><span>Главный лот</span></div>
+          <div class="section-head__main">
+            <h2 class="display reveal-lines">
+              <span class="line" style="--i:0"><span>Главный лот</span></span>
+              <span class="line" style="--i:1"><span>сезона</span></span>
+            </h2>
+            <div class="section-head__row">
+              <p>FLOT ONE — концепт, который мы поставили на дорогу. Один экземпляр. Уже в Москве.</p>
+              <span class="section-head__count">01 / 01</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="showroom__viewer reveal">
+          <div class="showroom__stage" id="showroomStage">
+            <div class="stage__grid" aria-hidden="true"></div>
+            <span class="stage__badge"><span class="dot"></span>В наличии · Москва</span>
+            <div class="stage__rotator" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <defs><path id="circlePath" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>
+                <text><textPath href="#circlePath">FLOT AUTO · PREMIUM · MOSCOW ·</textPath></text>
+              </svg>
+              <span class="stage__rotator-center">F</span>
+            </div>
+            <div class="stage__images">
+              <img class="stage__img is-active" data-view="side" src="assets/car-side.jpg" alt="FLOT ONE, вид сбоку" width="675" height="305">
+              <img class="stage__img" data-view="detail" src="assets/car-detail.jpg" alt="FLOT ONE, заднее колесо крупным планом" width="675" height="343" loading="lazy">
+              <img class="stage__img" data-view="rear" src="assets/car-rear.jpg" alt="FLOT ONE, вид сзади" width="675" height="327" loading="lazy">
+            </div>
+            <div class="stage__foot">
+              <div class="stage__caption"><span id="stageViewIndex">01</span> / 03 — <span id="stageViewName">Боковой профиль</span></div>
+              <div class="stage__tabs" role="tablist" aria-label="Ракурс автомобиля">
+                <button class="stage__tab is-active" type="button" data-view="side" role="tab" aria-selected="true">Бок</button>
+                <button class="stage__tab" type="button" data-view="detail" role="tab" aria-selected="false">Деталь</button>
+                <button class="stage__tab" type="button" data-view="rear" role="tab" aria-selected="false">Зад</button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="showroom__panel">
+            <div class="panel__top">
+              <span>FLOT ONE / GRAND TOURER</span>
+              <span>№ 001</span>
+            </div>
+            <h3 class="panel__title">FLOT ONE</h3>
+            <p class="panel__desc">Атмосферный V12, карбоновый монокок и 780 лошадиных сил. Собран вручную для тех, кто выбирает сердцем.</p>
+            <div class="panel__price"><span>от</span>12 400 000<span>₽</span></div>
+            <dl class="specs">
+              <div><dt>Двигатель</dt><dd>6.5 V12</dd></div>
+              <div><dt>Мощность</dt><dd>780 л.с.</dd></div>
+              <div><dt>Разгон 0–100</dt><dd>2.8 с</dd></div>
+              <div><dt>Максимум</dt><dd>340 км/ч</dd></div>
+              <div><dt>Год</dt><dd>2026</dd></div>
+              <div><dt>Пробег</dt><dd>0 км</dd></div>
+            </dl>
+            <div class="finish">
+              <div class="finish__head"><span>Цвет кузова</span><span id="finishName">Жемчуг</span></div>
+              <div class="finish__options" role="radiogroup" aria-label="Цвет кузова">
+                <button class="finish__swatch is-active" type="button" style="--swatch:#f4f4f1" data-finish="Жемчуг" data-brightness="1" data-bg="#ffffff" role="radio" aria-checked="true" aria-label="Жемчуг"></button>
+                <button class="finish__swatch" type="button" style="--swatch:#8f8f8c" data-finish="Графит" data-brightness=".66" data-bg="#c3c3bf" role="radio" aria-checked="false" aria-label="Графит"></button>
+                <button class="finish__swatch" type="button" style="--swatch:#3b3b3a" data-finish="Сталь" data-brightness=".46" data-bg="#9a9a96" role="radio" aria-checked="false" aria-label="Сталь"></button>
+              </div>
+            </div>
+            <div class="panel__actions">
+              <a class="btn btn--primary btn--full magnetic" href="#contacts" data-book="FLOT ONE"><span>Забронировать просмотр</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+              <a class="panel__link" href="#contacts">Запросить спецификацию <span>↗</span></a>
+            </div>
+            <div class="panel__note"><span class="dot"></span>В наличии · 1 экземпляр · Москва</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark fleet" id="fleet">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="section-head__label"><span class="section-head__index">02</span><span class="section-head__line"></span><span>Коллекция</span></div>
+          <div class="section-head__main">
+            <h2 class="display reveal-lines">
+              <span class="line" style="--i:0"><span>Выберите свой</span></span>
+              <span class="line" style="--i:1"><span><em>характер</em></span></span>
+            </h2>
+            <div class="section-head__row">
+              <p>Шесть автомобилей, отобранных вручную. Каждый прошёл 128-пунктовую проверку в собственном техническом центре.</p>
+              <span class="section-head__count">06 / 06</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="fleet__bar reveal">
+          <div class="filters" role="group" aria-label="Фильтр по типу автомобиля">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Все <span>06</span></button>
+            <button class="filter" type="button" data-filter="sport" aria-pressed="false">Спорт <span>03</span></button>
+            <button class="filter" type="button" data-filter="luxury" aria-pressed="false">Люкс <span>02</span></button>
+            <button class="filter" type="button" data-filter="electric" aria-pressed="false">Электро <span>01</span></button>
+          </div>
+          <div class="fleet__result" id="fleetResult">Показано 06 из 06</div>
+        </div>
+
+        <div class="fleet__grid" id="fleetGrid">
+          <article class="fleet-card" data-cat="sport" data-name="FLOT ONE" data-cat-label="Спорт" data-price="12 400 000 ₽" data-year="2026" data-engine="6.5 V12" data-power="780 л.с." data-accel="2.8 с" data-top="340 км/ч" data-mileage="0 км" data-desc="Чистый силуэт, карбоновый монокок и атмосферный V12. Автомобиль, который не пытается быть громче — он и есть громче." data-img="assets/car-side.jpg">
+            <div class="fleet-card__media">
+              <span class="fleet-card__tag">Спорт</span>
+              <span class="fleet-card__year">2026</span>
+              <img src="assets/car-side.jpg" alt="FLOT ONE, вид сбоку" width="675" height="305" loading="lazy" decoding="async">
+              <span class="fleet-card__open" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M4 12 12 4M5.5 4H12v6.5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            </div>
+            <div class="fleet-card__body">
+              <div class="fleet-card__head"><h3 class="fleet-card__name">FLOT ONE</h3><span class="fleet-card__price">12 400 000 ₽</span></div>
+              <div class="fleet-card__meta"><span>V12</span><span>780 л.с.</span><span>0 км</span></div>
+            </div>
+            <button class="fleet-card__hit" type="button" aria-label="Открыть карточку FLOT ONE"></button>
+          </article>
+
+          <article class="fleet-card" data-cat="sport" data-name="FLOT VELOCE" data-cat-label="Спорт" data-price="14 900 000 ₽" data-year="2025" data-engine="6.5 V12 Biturbo" data-power="830 л.с." data-accel="2.6 с" data-top="355 км/ч" data-mileage="4 200 км" data-desc="Аэродинамика без компромиссов. Каждая линия работает на скорость, каждый грамм — на реакцию. Версия для тех, кто читает дорогу на ощупь." data-img="assets/car-detail.jpg">
+            <div class="fleet-card__media">
+              <span class="fleet-card__tag">Спорт</span>
+              <span class="fleet-card__year">2025</span>
+              <img src="assets/car-detail.jpg" alt="FLOT VELOCE, задняя часть и колесо" width="675" height="343" loading="lazy" decoding="async">
+              <span class="fleet-card__open" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M4 12 12 4M5.5 4H12v6.5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            </div>
+            <div class="fleet-card__body">
+              <div class="fleet-card__head"><h3 class="fleet-card__name">FLOT VELOCE</h3><span class="fleet-card__price">14 900 000 ₽</span></div>
+              <div class="fleet-card__meta"><span>V12</span><span>830 л.с.</span><span>4 200 км</span></div>
+            </div>
+            <button class="fleet-card__hit" type="button" aria-label="Открыть карточку FLOT VELOCE"></button>
+          </article>
+
+          <article class="fleet-card" data-cat="luxury" data-name="FLOT NOIR" data-cat-label="Люкс" data-price="16 200 000 ₽" data-year="2026" data-engine="6.5 V12" data-power="830 л.с." data-accel="2.7 с" data-top="350 км/ч" data-mileage="0 км" data-desc="Тотальный чёрный. Матовый карбон, затемнённая оптика и салон, в котором свет — только ваш. Тишина как форма скорости." data-img="assets/car-rear.jpg">
+            <div class="fleet-card__media">
+              <span class="fleet-card__tag">Люкс</span>
+              <span class="fleet-card__year">2026</span>
+              <img src="assets/car-rear.jpg" alt="FLOT NOIR, вид сзади" width="675" height="327" loading="lazy" decoding="async">
+              <span class="fleet-card__open" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M4 12 12 4M5.5 4H12v6.5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            </div>
+            <div class="fleet-card__body">
+              <div class="fleet-card__head"><h3 class="fleet-card__name">FLOT NOIR</h3><span class="fleet-card__price">16 200 000 ₽</span></div>
+              <div class="fleet-card__meta"><span>V12</span><span>830 л.с.</span><span>0 км</span></div>
+            </div>
+            <button class="fleet-card__hit" type="button" aria-label="Открыть карточку FLOT NOIR"></button>
+          </article>
+
+          <article class="fleet-card fleet-card--flip" data-cat="electric" data-name="FLOT AERO" data-cat-label="Электро" data-price="9 800 000 ₽" data-year="2026" data-engine="Dual Motor" data-power="1 020 л.с." data-accel="2.1 с" data-top="320 км/ч" data-mileage="0 км" data-desc="Электрический гранд-турер. 1020 лошадиных сил, 1200 Н·м и тишина, которая громче любого мотора. Запас хода — 640 км." data-img="assets/car-side.jpg" data-flip="true">
+            <div class="fleet-card__media">
+              <span class="fleet-card__tag">Электро</span>
+              <span class="fleet-card__year">2026</span>
+              <img src="assets/car-side.jpg" alt="FLOT AERO, вид сбоку" width="675" height="305" loading="lazy" decoding="async">
+              <span class="fleet-card__open" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M4 12 12 4M5.5 4H12v6.5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            </div>
+            <div class="fleet-card__body">
+              <div class="fleet-card__head"><h3 class="fleet-card__name">FLOT AERO</h3><span class="fleet-card__price">9 800 000 ₽</span></div>
+              <div class="fleet-card__meta"><span>EV</span><span>1 020 л.с.</span><span>0 км</span></div>
+            </div>
+            <button class="fleet-card__hit" type="button" aria-label="Открыть карточку FLOT AERO"></button>
+          </article>
+
+          <article class="fleet-card fleet-card--flip" data-cat="sport" data-name="FLOT CORSA" data-cat-label="Спорт" data-price="18 500 000 ₽" data-year="2025" data-engine="6.5 V12" data-power="900 л.с." data-accel="2.5 с" data-top="365 км/ч" data-mileage="1 800 км" data-desc="Трек-ориентированная версия с облегчённым кузовом и подвеской, настроенной на Нюрбургринг. Омологация — 99 экземпляров." data-img="assets/car-detail.jpg" data-flip="true">
+            <div class="fleet-card__media">
+              <span class="fleet-card__tag">Спорт</span>
+              <span class="fleet-card__year">2025</span>
+              <img src="assets/car-detail.jpg" alt="FLOT CORSA, задняя часть и колесо" width="675" height="343" loading="lazy" decoding="async">
+              <span class="fleet-card__open" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M4 12 12 4M5.5 4H12v6.5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            </div>
+            <div class="fleet-card__body">
+              <div class="fleet-card__head"><h3 class="fleet-card__name">FLOT CORSA</h3><span class="fleet-card__price">18 500 000 ₽</span></div>
+              <div class="fleet-card__meta"><span>V12</span><span>900 л.с.</span><span>1 800 км</span></div>
+            </div>
+            <button class="fleet-card__hit" type="button" aria-label="Открыть карточку FLOT CORSA"></button>
+          </article>
+
+          <article class="fleet-card fleet-card--flip" data-cat="luxury" data-name="FLOT ATELIER" data-cat-label="Люкс" data-price="21 000 000 ₽" data-year="2026" data-engine="6.5 V12" data-power="780 л.с." data-accel="2.9 с" data-top="335 км/ч" data-mileage="0 км" data-desc="Персональная спецификация. Цвет, кожа, швы и гравировка — всё создаётся под одного владельца. Срок ожидания — четыре месяца." data-img="assets/car-rear.jpg" data-flip="true">
+            <div class="fleet-card__media">
+              <span class="fleet-card__tag">Люкс</span>
+              <span class="fleet-card__year">2026</span>
+              <img src="assets/car-rear.jpg" alt="FLOT ATELIER, вид сзади" width="675" height="327" loading="lazy" decoding="async">
+              <span class="fleet-card__open" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M4 12 12 4M5.5 4H12v6.5" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            </div>
+            <div class="fleet-card__body">
+              <div class="fleet-card__head"><h3 class="fleet-card__name">FLOT ATELIER</h3><span class="fleet-card__price">21 000 000 ₽</span></div>
+              <div class="fleet-card__meta"><span>V12</span><span>780 л.с.</span><span>0 км</span></div>
+            </div>
+            <button class="fleet-card__hit" type="button" aria-label="Открыть карточку FLOT ATELIER"></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light about" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="section-head__label"><span class="section-head__index">03</span><span class="section-head__line"></span><span>Манифест</span></div>
+          <div class="section-head__main">
+            <h2 class="display reveal-lines">
+              <span class="line" style="--i:0"><span>Мы не продаём</span></span>
+              <span class="line" style="--i:1"><span>автомобили.</span></span>
+              <span class="line" style="--i:2"><span><em>Мы передаём характер.</em></span></span>
+            </h2>
+            <div class="section-head__row">
+              <p>Частный автосалон в Москве. С 2012 года ищем автомобили, которые невозможно забыть.</p>
+              <span class="section-head__count">FLOT / 2012—2026</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__copy reveal">
+            <p class="about__lead">FlotAuto — это не шоурум с рядами машин. Это мастерская впечатлений, где каждый автомобиль отбирается под характер будущего владельца.</p>
+            <p>Мы находим редкие спецификации, проверяем историю до последнего болта и берём на себя всё: от переговоров с продавцом до постановки на учёт. В собственном техническом центре каждый автомобиль проходит 128-пунктовую проверку.</p>
+            <div class="about__signature"><span class="about__sign">Алексей Флотин</span><span>Основатель FLOT AUTO</span></div>
+            <blockquote class="about__quote">«Автомобиль — единственная роскошь, которую можно использовать каждый день».</blockquote>
+          </div>
+
+          <figure class="about__figure reveal" id="aboutFigure">
+            <div class="about__img-wrap"><img src="assets/car-detail.jpg" data-parallax="0.1" alt="Заднее колесо и карбоновая панель FLOT ONE" loading="lazy" decoding="async"></div>
+            <span class="about__badge">DETAIL / 02</span>
+            <figcaption class="about__caption">FLOT ONE · карбоновый пакет</figcaption>
+            <span class="about__note about__note--a"><i></i>Керамика 410 мм</span>
+            <span class="about__note about__note--b"><i></i>Кованый диск 21″</span>
+          </figure>
+        </div>
+
+        <div class="about__stats reveal">
+          <div class="about-stat"><span class="about-stat__num" data-count="14">14</span><span>лет на рынке</span></div>
+          <div class="about-stat"><span class="about-stat__num" data-count="1200" data-suffix="+">1 200+</span><span>автомобилей передано</span></div>
+          <div class="about-stat"><span class="about-stat__num" data-count="128">128</span><span>пунктов проверки</span></div>
+          <div class="about-stat"><span class="about-stat__num" data-count="98" data-suffix="%">98%</span><span>клиентов возвращаются</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark services" id="services">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="section-head__label"><span class="section-head__index">04</span><span class="section-head__line"></span><span>Услуги</span></div>
+          <div class="section-head__main">
+            <h2 class="display reveal-lines">
+              <span class="line" style="--i:0"><span>Полный цикл.</span></span>
+              <span class="line" style="--i:1"><span><em>Без компромиссов.</em></span></span>
+            </h2>
+            <div class="section-head__row">
+              <p>От первого звонка до ключей в руке. Один персональный менеджер, один прозрачный договор, ноль скрытых условий.</p>
+              <span class="section-head__count">04 / УСЛУГИ</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="services__list">
+          <a class="service-row reveal" href="#contacts" data-preview="assets/car-side.jpg" data-preview-label="Подбор под ключ">
+            <span class="service-row__num">01</span>
+            <span class="service-row__title">Подбор под ключ</span>
+            <span class="service-row__desc">От бюджета и характера до конкретного VIN. Ищем по закрытым базам и аукционам Европы.</span>
+            <span class="service-row__icon"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          </a>
+          <a class="service-row reveal" href="#contacts" data-preview="assets/car-detail.jpg" data-preview-label="Трейд-ин">
+            <span class="service-row__num">02</span>
+            <span class="service-row__title">Трейд-ин</span>
+            <span class="service-row__desc">Оцениваем ваш автомобиль по рынку за 30 минут. Разницу оформляем в рассрочку или зачёт.</span>
+            <span class="service-row__icon"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          </a>
+          <a class="service-row reveal" href="#contacts" data-preview="assets/car-rear.jpg" data-preview-label="Финансирование">
+            <span class="service-row__num">03</span>
+            <span class="service-row__title">Финансирование</span>
+            <span class="service-row__desc">Партнёрские программы от 2,9%. Одобрение за час, без скрытых комиссий и навязанных страховок.</span>
+            <span class="service-row__icon"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          </a>
+          <a class="service-row reveal" href="#contacts" data-preview="assets/car-side.jpg" data-preview-label="Доставка по России">
+            <span class="service-row__num">04</span>
+            <span class="service-row__title">Доставка по России</span>
+            <span class="service-row__desc">Закрытый автовоз, полное страхование и постановка на учёт в день прибытия.</span>
+            <span class="service-row__icon"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          </a>
+        </div>
+
+        <div class="services__foot reveal">
+          <p><span class="status-dot"></span>Персональный менеджер на связи 24/7</p>
+          <a class="btn btn--ghost magnetic" href="#contacts"><span>Обсудить задачу</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light reviews" id="reviews">
+      <div class="container">
+        <header class="section-head reveal">
+          <div class="section-head__label"><span class="section-head__index">05</span><span class="section-head__line"></span><span>Отзывы</span></div>
+          <div class="section-head__main">
+            <h2 class="display reveal-lines">
+              <span class="line" style="--i:0"><span>Их слова.</span></span>
+              <span class="line" style="--i:1"><span><em>Не наши.</em></span></span>
+            </h2>
+            <div class="section-head__row">
+              <p>Три истории людей, которые пришли за автомобилем, а ушли с характером.</p>
+              <span class="section-head__count">05 / 05</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="quotes reveal" id="quotes">
+          <span class="quotes__mark" aria-hidden="true">“</span>
+          <div class="quotes__viewport" aria-live="polite">
+            <article class="quote-slide is-active">
+              <p class="quote-slide__text">«Впервые покупал машину без нервов. Нашли именно то, что искал, за неделю. При этом ни разу не пришлось усомниться в истории автомобиля».</p>
+              <footer><span class="quote-slide__avatar">АК</span><div><strong>Александр К.</strong><span>FLOT ONE · Москва</span></div></footer>
+            </article>
+            <article class="quote-slide">
+              <p class="quote-slide__text">«Приехала в Москву на два дня — уехала на новой машине. Всё организовали под ключ: от сделки до постановки на учёт. Сервис уровня частного банка».</p>
+              <footer><span class="quote-slide__avatar">МЛ</span><div><strong>Мария Л.</strong><span>FLOT NOIR · Санкт-Петербург</span></div></footer>
+            </article>
+            <article class="quote-slide">
+              <p class="quote-slide__text">«Трейд-ин оценили честно, кредит одобрили за час. И самое главное — не было ни одного звонка с навязчивыми допами. Просто сделали свою работу хорошо».</p>
+              <footer><span class="quote-slide__avatar">ДС</span><div><strong>Дмитрий С.</strong><span>FLOT AERO · Москва</span></div></footer>
+            </article>
+          </div>
+          <div class="quotes__controls">
+            <div class="quotes__count"><span id="quoteCurrent">01</span><span class="sep">/</span><span>03</span></div>
+            <div class="quotes__progress"><span id="quoteProgress"></span></div>
+            <div class="quotes__arrows">
+              <button type="button" id="quotePrev" aria-label="Предыдущий отзыв"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H4M7.5 4.5 4 8l3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></button>
+              <button type="button" id="quoteNext" aria-label="Следующий отзыв"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark contact" id="contacts">
+      <div class="contact__bg" aria-hidden="true"><img src="assets/hero-poster.jpg" alt="" loading="lazy" decoding="async"></div>
+      <div class="container contact__inner">
+        <header class="section-head reveal">
+          <div class="section-head__label"><span class="section-head__index">06</span><span class="section-head__line"></span><span>Контакты</span></div>
+          <div class="section-head__main">
+            <h2 class="display reveal-lines">
+              <span class="line" style="--i:0"><span>Тест-драйв</span></span>
+              <span class="line" style="--i:1"><span>начинается</span></span>
+              <span class="line" style="--i:2"><span><em>здесь.</em></span></span>
+            </h2>
+            <div class="section-head__row">
+              <p>Приезжайте на кофе — или закажите видеопрезентацию автомобиля. Ответим в течение 15 минут.</p>
+              <span class="section-head__count">МОСКВА / 2026</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__item"><span>Адрес</span><a href="https://yandex.ru/maps/?text=Москва%2C%20Пресненская%20наб.%2C%2012" target="_blank" rel="noopener">Москва, Пресненская наб., 12<br>Башня «Федерация», −1 этаж</a></div>
+            <div class="contact__item"><span>Часы работы</span><p>Ежедневно 10:00—21:00</p></div>
+            <div class="contact__item"><span>Телефон</span><a href="tel:+74951204040">+7 (495) 120-40-40</a></div>
+            <div class="contact__item"><span>Почта</span><a href="mailto:hello@flotauto.ru">hello@flotauto.ru</a></div>
+            <div class="contact__socials">
+              <a class="social-pill" href="https://t.me/flotauto" target="_blank" rel="noopener">Telegram <span>↗</span></a>
+              <a class="social-pill" href="https://vk.com/flotauto" target="_blank" rel="noopener">VK <span>↗</span></a>
+              <a class="social-pill" href="https://youtube.com" target="_blank" rel="noopener">YouTube <span>↗</span></a>
+            </div>
+          </div>
+
+          <div class="contact__form-wrap reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="contact-form__head">
+                <span class="contact-form__eyebrow">ЗАЯВКА / 01</span>
+                <h3>Записаться на тест-драйв</h3>
+                <p>Оставьте контакты — менеджер свяжется в течение 15 минут.</p>
+              </div>
+              <div class="field">
+                <label for="name">Ваше имя</label>
+                <input id="name" name="name" type="text" placeholder="Иван" autocomplete="name" required>
+                <span class="field__error" data-error-for="name"></span>
+              </div>
+              <div class="field">
+                <label for="phone">Телефон</label>
+                <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required>
+                <span class="field__error" data-error-for="phone"></span>
+              </div>
+              <div class="field">
+                <label for="model">Интересующая модель</label>
+                <div class="select-wrap">
+                  <select id="model" name="model">
+                    <option>Ещё не выбрал</option>
+                    <option>FLOT ONE</option>
+                    <option>FLOT VELOCE</option>
+                    <option>FLOT NOIR</option>
+                    <option>FLOT AERO</option>
+                    <option>FLOT CORSA</option>
+                    <option>FLOT ATELIER</option>
+                  </select>
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.2"/></svg>
+                </div>
+              </div>
+              <label class="check">
+                <input type="checkbox" id="consent" name="consent" required>
+                <span class="check__box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m2.5 6 2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                <span class="check__text">Согласен на обработку персональных данных</span>
+              </label>
+              <span class="field__error field__error--consent" data-error-for="consent"></span>
+              <button class="btn btn--dark btn--full" type="submit"><span class="btn__label">Отправить заявку</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></button>
+              <p class="contact-form__note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+
+              <div class="form-success" id="formSuccess" aria-hidden="true">
+                <span class="form-success__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 5 5 9-10" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                <h4>Заявка отправлена</h4>
+                <p>Спасибо, <span id="successName">Иван</span>. Мы свяжемся с вами в течение 15 минут.</p>
+                <button type="button" class="btn btn--dark" id="formReset"><span>Отправить ещё одну</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="logo" href="#home" aria-label="FLOT AUTO — на главную">
+            <span class="logo__mark">F</span>
+            <span class="logo__text"><span class="logo__name">FLOT <em>AUTO</em></span><span class="logo__sub">PREMIUM CARS</span></span>
+          </a>
+          <p>Премиальный автосалон в Москве. Автомобили с характером с 2012 года.</p>
+          <div class="footer__status"><span class="status-dot"></span>Сейчас открыто · до 21:00</div>
+        </div>
+        <nav class="footer__col" aria-label="Навигация в подвале">
+          <span>Навигация</span>
+          <a href="#collection">Коллекция</a>
+          <a href="#about">О салоне</a>
+          <a href="#services">Услуги</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="footer__col">
+          <span>Контакты</span>
+          <a href="tel:+74951204040">+7 (495) 120-40-40</a>
+          <a href="mailto:hello@flotauto.ru">hello@flotauto.ru</a>
+          <a href="https://yandex.ru/maps/?text=Москва%2C%20Пресненская%20наб.%2C%2012" target="_blank" rel="noopener">Пресненская наб., 12</a>
+          <span class="footer__hours">Ежедневно 10:00—21:00</span>
+        </div>
+        <div class="footer__col">
+          <span>Соцсети</span>
+          <a href="https://t.me/flotauto" target="_blank" rel="noopener">Telegram ↗</a>
+          <a href="https://vk.com/flotauto" target="_blank" rel="noopener">VK ↗</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube ↗</a>
+        </div>
+      </div>
+      <div class="footer__wordmark" aria-hidden="true"><span>FLOT</span><span class="outline">AUTO</span></div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> FLOT AUTO. Все права защищены.</span>
+        <div><a href="#">Политика конфиденциальности</a><a href="#">Договор оферты</a></div>
+        <a class="footer__up" href="#home">Наверх <span>↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="service-preview" id="servicePreview" aria-hidden="true">
+    <img src="assets/car-side.jpg" alt="">
+    <span id="servicePreviewLabel">Подбор под ключ</span>
+  </div>
+
+  <dialog class="car-modal" id="carModal" aria-labelledby="carModalTitle">
+    <div class="car-modal__inner">
+      <button class="car-modal__close" id="carModalClose" type="button" aria-label="Закрыть карточку"><span></span><span></span></button>
+      <div class="car-modal__media">
+        <span class="car-modal__badge" id="carModalCat">Спорт</span>
+        <img id="carModalImg" src="assets/car-side.jpg" alt="">
+      </div>
+      <div class="car-modal__content">
+        <span class="car-modal__eyebrow" id="carModalYear">2026 / В наличии</span>
+        <h2 id="carModalTitle">FLOT ONE</h2>
+        <p id="carModalDesc"></p>
+        <dl class="specs specs--modal">
+          <div><dt>Двигатель</dt><dd id="carModalEngine">6.5 V12</dd></div>
+          <div><dt>Мощность</dt><dd id="carModalPower">780 л.с.</dd></div>
+          <div><dt>Разгон 0–100</dt><dd id="carModalAccel">2.8 с</dd></div>
+          <div><dt>Максимум</dt><dd id="carModalTop">340 км/ч</dd></div>
+          <div><dt>Пробег</dt><dd id="carModalMileage">0 км</dd></div>
+          <div><dt>Год</dt><dd id="carModalYearSpec">2026</dd></div>
+        </dl>
+        <div class="car-modal__footer">
+          <div class="car-modal__price"><span>Цена</span><strong id="carModalPrice">12 400 000 ₽</strong></div>
+          <button class="btn btn--primary" id="carModalBook" type="button"><span>Забронировать</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.2"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
